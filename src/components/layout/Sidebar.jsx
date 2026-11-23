@@ -15,7 +15,7 @@ export default function Sidebar({ isOpen, onClose }) {
             )}
 
             <aside
-                className={`no-print fixed inset-y-0 left-0 z-40 flex w-72 flex-col overflow-hidden border-r border-white/10 bg-gradient-to-b from-[#102F46] via-[#16476A] to-[#0B2235] text-slate-300 shadow-2xl shadow-slate-950/30 transition-all duration-300 ease-in-out lg:translate-x-0 ${
+                className={`no-print fixed inset-y-0 left-0 z-40 flex w-72 flex-col overflow-hidden border-r border-white/10 bg-linear-to-b from-[#102F46] via-[#16476A] to-[#0B2235] text-slate-300 shadow-2xl shadow-slate-950/30 transition-all duration-300 ease-in-out lg:translate-x-0 ${
                     isOpen ? 'translate-x-0' : '-translate-x-full'
                 }`}
                 aria-label="Main navigation"
@@ -27,7 +27,7 @@ export default function Sidebar({ isOpen, onClose }) {
                 {/* Logo */}
                 <div className="relative flex h-20 shrink-0 items-center justify-between border-b border-white/10 px-6">
                     <div className="flex items-center gap-3">
-                        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-red-500 to-[#BF092F] text-white shadow-lg shadow-red-900/30 ring-1 ring-white/10 transition-transform duration-300 hover:scale-105">
+                        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-linear-to-br from-red-500 to-[#BF092F] text-white shadow-lg shadow-red-900/30 ring-1 ring-white/10 transition-transform duration-300 hover:scale-105">
                             <Target size={23} strokeWidth={2.5} />
                         </div>
 
@@ -66,8 +66,8 @@ export default function Sidebar({ isOpen, onClose }) {
                             className={({ isActive }) =>
                                 `group relative flex items-center gap-3.5 overflow-hidden rounded-xl px-4 py-3 text-sm font-semibold transition-all duration-300 ${
                                     isActive
-                                        ? 'bg-gradient-to-r from-red-600 to-[#BF092F] text-white shadow-lg shadow-red-950/30 ring-1 ring-white/10'
-                                        : 'text-slate-400 hover:translate-x-1 hover:bg-white/[0.07] hover:text-white'
+                                        ? 'bg-linear-to-r from-red-600 to-[#BF092F] text-white shadow-lg shadow-red-950/30 ring-1 ring-white/10'
+                                        : 'text-slate-400 hover:translate-x-1 hover:bg-white/7 hover:text-white'
                                 }`
                             }
                         >
@@ -101,7 +101,7 @@ export default function Sidebar({ isOpen, onClose }) {
 
                 {/* Footer */}
                 <div className="relative shrink-0 border-t border-white/10 p-4">
-                    <div className="flex items-center gap-3 rounded-xl border border-white/5 bg-white/[0.04] px-4 py-3">
+                    <div className="flex items-center gap-3 rounded-xl border border-white/5 bg-white/4 px-4 py-3">
                         <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10">
                             <span className="h-2.5 w-2.5 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.6)]" />
                         </div>
